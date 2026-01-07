@@ -1,0 +1,214 @@
+Interview Prep:
+
+value type,ref type
+difference between stack and heap
+interface
+polymorphism
+incapsulation
+LINQ
+Abstract Class
+Boxing and unboxing
+SOLID Principles
+Array
+
+
+Autocad API:
+Block table / block table record
+interface
+block -> new document -copy
+ID cloning
+How to select all entity in a doc
+prompt - autocad API
+Dynamic block
+Xref
+Extends/bounding box
+Array
+Transaction
+
+
+-------------------------------------------
+
+AutoCAD / AutoCAD API
+
+Explain AutoCAD object hierarchy (Application → Document → Database → Entity).
+
+What is the difference between Entity and DBObject?
+
+How do you create a command in AutoCAD using C#?
+
+What is a Transaction? Why is it mandatory?
+
+Difference between ModelSpace and PaperSpace?
+
+How do you select entities from drawing using API?
+
+How do you read and modify layer properties?
+
+What is BlockReference vs BlockTableRecord?
+
+How do you handle ObjectId?
+
+How do you debug AutoCAD plugin errors?
+
+---------------------------------------------------------------------
+
+Revit API (if you mention Revit)
+
+Difference between Element, ElementType, and FamilyInstance?
+
+What is a FilteredElementCollector?
+
+How do you read and write parameters?
+
+What is a Transaction in Revit API?
+
+Difference between Instance parameter and Type parameter?
+
+How do you load a family programmatically?
+
+How do you get elements by category?
+
+What is UIDocument vs Document?
+
+How do you create a Ribbon button?
+
+What is Regeneration?
+
+
+-----------------------------------------------
+
+Inventor / iLogic
+
+Difference between iLogic and Inventor API?
+
+How do you access parameters in Inventor?
+
+What is an AssemblyDocument vs PartDocument?
+
+What are iParts and iAssemblies?
+
+How do you update a model programmatically?
+
+What is a Model State?
+
+How do you add components to an assembly using API?
+
+How do you handle constraints in API?
+
+What is the Units of Measure API?
+
+When do you prefer iLogic over API?
+
+
+----------------------------------------------------------
+
+
+Plant 3D (HIGH VALUE for Srinsoft)
+
+What is PlantProject?
+
+What are PnP Objects?
+
+How does Spec-driven modeling work?
+
+Difference between Pipe vs InlineAsset?
+
+What is DataManager?
+
+How do you read Plant 3D properties?
+
+What is Port vs Connection?
+
+How do you export Plant 3D data?
+
+How do you create custom components?
+
+Common Plant 3D API challenges you faced?
+
+
+-----------------------------------------------
+
+C# / .NET Questions (MUST KNOW)
+
+Explain OOPS concepts with real examples.
+
+Difference between abstract class and interface?
+
+What is LINQ? Where did you use it?
+
+Difference between List and Array?
+
+What is delegate and event?
+
+What is Exception handling?
+
+Difference between ref and out?
+
+What is Garbage Collection?
+
+What is DLL? How do you create one?
+
+Difference between .NET Framework and .NET Core?
+
+------------------------------------------------------
+
+Geometry & Math (They DO ASK)
+
+What is a Bounding Box?
+
+How do you calculate center of an object?
+
+Difference between World CS and Local CS?
+
+How do you transform coordinates?
+
+How do you calculate distance between two points?
+
+What is Vector normalization?
+
+Explain translation, rotation, scaling.
+
+How do you check object intersection?
+
+How do you align two components?
+
+How do you find minimum/maximum extents?
+
+-----------------------------------------------------------------------------
+
+🔹 Scenario-Based (VERY IMPORTANT)
+
+Client wants one-click automation — how do you design it?
+
+Drawing has 1000+ objects — how do you optimize?
+
+How do you handle invalid user inputs?
+
+API not working in client system — what do you do?
+
+How do you debug client-side CAD issues?
+
+-----------------------------------------------------------------------
+⭐ TOP 10 QUESTIONS YOU MUST MASTER (CRITICAL)
+
+Explain your project end-to-end
+
+AutoCAD Transaction
+
+Revit FilteredElementCollector
+
+Plant 3D spec-driven modeling
+
+Bounding box logic
+
+C# OOPS
+
+Exception handling
+
+Reading/writing parameters
+
+Performance optimization
+
+Debugging strategy
+
+-------------------------------------------------------
