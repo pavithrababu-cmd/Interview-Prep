@@ -1,0 +1,49 @@
+using Autodesk.Revit.UI;
+using Autodesk.Revit.DB;
+using Autodesk.Revit.Attributes;
+
+[Transaction(TransactionMode.Manual)]
+public class CreateWallCommand : IExternalCommand
+{
+    public Result Execute(
+        ExternalCommandData commandData,
+        ref string message,
+        ElementSet elements)
+    {
+        // 1. Get UI and Document
+        UIDocument uiDoc = commandData.Application.ActiveUIDocument;
+        Document doc = uiDoc.Document;
+
+        // 2. Start Transaction
+        using (Transaction tx = new Transaction(doc, "Create Wall"))
+        {
+            tx.Start();
+
+            // 3. Create Geometry Points
+            XYZ start = new XYZ(0, 0, 0);
+            XYZ end = new XYZ(30, 0, 0);
+
+            // 4. Create Line
+            Line wallLine = Line.CreateBound(start, end);
+
+            // 5. Get Level
+            Level level = new FilteredElementCollector(doc)
+                            .OfClass(typeof(Level))
+                            .Cast<Level>()
+                            .FirstOrDefault();
+
+            // 6. Create Wall
+            Wall.Create(
+                doc,
+                wallLine,
+                level.Id,
+                false
+            );
+
+            // 7. Commit Transaction
+            tx.Commit();
+        }
+
+        return Result.Succeeded;
+    }
+}
