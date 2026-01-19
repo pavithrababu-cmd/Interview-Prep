@@ -3,3 +3,44 @@ Revit ExternalCommand workflow
 AutoCAD transactions
 
 Plant 3D object hierarchy
+C:\Users\Autodesk\source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Autodesk.AutoCAD.ApplicationServices;
+using Autodesk.AutoCAD.DatabaseServices;
+using Autodesk.AutoCAD.Runtime;
+using Autodesk.AutoCAD.Geometry;
+
+namespace ClassLibrary1
+{
+    
+    public class Class1
+    {
+        [CommandMethod ("CustomLine")]
+        public void CustomLine()
+        {
+            Document doc =Application.DocumentManager.MdiActiveDocument;
+            Database db = doc.Database;
+
+            using (Transaction tr=db.TransactionManager.StartTransaction())
+            {
+                BlockTable bt =tr.GetObject(db.BlockTableId,OpenMode.ForRead)as BlockTable;
+                BlockTableRecord btr = tr.GetObject(bt[BlockTableRecord.ModelSpace], OpenMode.ForWrite) as BlockTableRecord;
+
+                Line ll = new Line();
+                ll.StartPoint = new Point3d(0, 0, 0);
+                ll.EndPoint = new Point3d(10, 10, 0);
+                ll.ColorIndex = 234;
+                btr.AppendEntity(ll);
+                tr.AddNewlyCreatedDBObject(ll, true);
+                tr.Commit();
+            }
+        }
+
+    }
+}
