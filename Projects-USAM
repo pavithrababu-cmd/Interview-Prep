@@ -1,0 +1,12 @@
+1.clash detection-revit
+2. iLogic documentation-inventor
+3.UI/UX - study and prepared design for Attendance Portal 
+4.AutoCAD Lisp - For locking the whole project file from unknown user
+5.Auto CAD Plant 3D - fetching the data from the model and storing it in the MongoDB database.
+6. Revit API - rename text type.
+7.Revit API- text manager for highlight, rename, view, purge text.- autodesk app store
+8.Inventor API- BOM extraction and drawing sheet part List description.
+9.REVIT API - level and grid circle size changes, text size changes .
+10.AutoCAD - Fetch the elements from the (By layer) display them inside the combobox and list the particular elements(door means there are how many no of doors and their Id) inside a checklist box and also select all to mention them like tag by leader.
+11.Plant3D- Create custom components by using python scripts.
+12.AWS-Twin Maker
