@@ -66,3 +66,26 @@ User selects new circle size and text size
 Plugin updates elements inside a Transaction
 
 
+------------------------------------------------------------------------------
+5.Clash Detection:
+
+✔ Detects clashes between walls and MEP elements
+✔ Identifies intersections with pipes, ducts, conduits, cable trays
+✔ Automatically creates openings (voids) in walls
+✔ Ensures the pipe passes fully through the wall
+✔ Uses loaded family (.rfa) or geometry-based openings
+✔ Works through a custom Revit Ribbon button
+
+
+Workflow:
+| Component                    | Used For                |
+| ---------------------------- | ----------------------- |
+| **Revit API (C#)**           | Access model elements   |
+| **IExternalCommand**         | Run plugin              |
+| **FilteredElementCollector** | Get walls, pipes, ducts |
+| **BoundingBox / Geometry**   | Clash detection         |
+| **FamilyInstance**           | Create openings         |
+| **Transaction**              | Modify Revit model      |
+| **XYZ**                      | Positioning             |
+
+
