@@ -67,7 +67,10 @@ Plugin updates elements inside a Transaction
 
 
 ------------------------------------------------------------------------------
-5.Clash Detection:
+5.Clash Detection: I developed a Revit plugin using C# that automatically detects clashes between walls and MEP 
+elements like pipes and ducts. The plugin calculates the 
+intersection point and places an opening family at the exact location, 
+ensuring proper clearance. This avoids manual modeling errors and speeds up coordination work.
 
 ✔ Detects clashes between walls and MEP elements
 ✔ Identifies intersections with pipes, ducts, conduits, cable trays
