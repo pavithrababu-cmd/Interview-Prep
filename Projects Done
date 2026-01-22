@@ -1,0 +1,68 @@
+1.Plant 3D → MongoDB:
+
+I access the active Plant 3D document and project
+
+I fetch Plant 3D objects (pipes, equipment, inline assets)
+
+I extract properties using PnP DataObjects
+
+I serialize data and store it in MongoDB
+
+
+Workflow:
+Explain this flow slowly:
+
+CommandMethod starts
+
+Get active document
+
+Get Plant project
+
+Iterate entities
+
+Read PnP data
+
+Save to MongoDB
+
+--------------------------------------------------------
+2.Created custom components in Plant 3D using Python scripts (Cable Tray):
+
+I created a custom parametric component using Plant 3D Python scripting
+
+The component was a Cable Tray with configurable dimensions
+
+I defined parameters like length, width, height, thickness
+
+I generated geometry using Plant 3D primitive functions
+
+I registered the script so it appears in Spec Editor and model palette.
+
+
+------------------------------------------------------------------------------
+3.Text Manager-Revit:
+
+User clicks Text Manager button in Revit
+
+Plugin reads text notes and text types using Revit API
+
+Plugin filters data based on text size, type, or view
+
+Plugin performs the selected action (highlight, replace, view, purge)
+
+Changes are committed using a Transaction.
+
+
+------------------------------------------------------------------------------
+4.Level and Grid Size:
+
+User clicks the Levels & Grids Manager button
+
+Plugin collects Levels and Grids using Revit API
+
+Plugin reads their annotation properties (text size & symbol size)
+
+User selects new circle size and text size
+
+Plugin updates elements inside a Transaction
+
+
